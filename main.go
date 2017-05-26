@@ -30,7 +30,7 @@ func vimOrTreat() {
 }
 
 func startVim() error {
-	vim := exec.Command("vim")
+	vim := exec.Command("vim", os.Args[1:]...)
 	vim.Stdin = os.Stdin
 	vim.Stdout = os.Stdout
 
