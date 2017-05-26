@@ -25,7 +25,7 @@ func vimOrTreat() {
 
 	err := startVim()
 	if err != nil {
-		fmt.Println("failed starting vim: %s", err.Error())
+		fmt.Printf("failed starting vim: %s\n", err.Error())
 	}
 }
 
